@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+    color: white;
+    flex-direction: row;
+    flex: 0 0 1200px;
+    justify-content: space-between;
+}
+
+nav .dropdown{
+    width: 190px;
+    padding: 7px;
+    margin: auto 0;
+    background: aliceblue;
+    margin-right: 25px;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 14px;
+    color: black;
+    position: relative; text-align: center;
+
+}
+nav .dropdown img{
+    width: 22px;
+    float: left;
+}
+
+nav .dropdown-menu{
+    position: absolute;
+    width: 212px;
+    top: 70px;
+    left: 80%;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 2px 2px grey;
+    z-index: 1;
+}
+
+nav .dropdown-menu .dropdown-menu-list{
+    list-style: none;
+}
+
+nav .dropdown-menu .dropdown-menu-list .list-item{
+    line-height: 50px;
+}
