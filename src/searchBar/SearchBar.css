@@ -1,0 +1,30 @@
+.form-inline{
+    display: inline-flex;
+    position: relative;
+
+}
+
+.form-inline input{
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #000;
+    border-radius: .25rem;
+    padding-left: 40px;
+    width: 320px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.form-inline img{
+    position: absolute;
+    width: 25px;
+    left: 2%;
+    top: 18%;
+}
+
+.form-inline .submitIcon{
+    position: absolute;
+    left: 100%;
+    top:20%;
+}
