@@ -25,3 +25,9 @@
 .w-97{
     width: 97%;
 }
+
+@media (max-width: 780px) {
+    #id_section2_body{
+        width: 90%;
+    }
+}

@@ -6,6 +6,7 @@
   .App{
     display: block !important;
     overflow: hidden;
+    width: 100%;
   }
   #overlay{
     display: none;
@@ -27,6 +28,6 @@
   }
 
    #id_aside{
-     width: 100% !important;
+     width: 95% !important;
    }
 }

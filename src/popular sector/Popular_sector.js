@@ -19,7 +19,7 @@ export default class Popular_sector extends React.Component{
 
     render() {
         return(
-            <div className="card">
+            <div className="card" id={"id_section2_body"}>
                 <div className="pl-5">
                 <h3>Discover the popular sector we track</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

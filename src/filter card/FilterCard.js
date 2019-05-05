@@ -48,7 +48,7 @@ export default class FilterCard extends React.Component{
                         return <Badge value={item.text} color={item.color}/>
                     })}
 
-                    <div className={"flex flex-row flex-wrap mb-16"}>
+                    <div className={"flex flex-row flex-wrap mb-16"} id={"id_filter_card_list"}>
                     {this.state.cards.map((item)=>{
                         return <Card className={"mr-25 bg-black"} badge-color={item.badgeColor} badge-value={item.badgeValue} text = {item.text}/>
                     })}
