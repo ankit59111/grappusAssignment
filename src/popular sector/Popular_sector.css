@@ -1,0 +1,27 @@
+.card h4{
+    font-size: 14px;
+    height: fit-content;
+}
+.circle:before {
+    content: ' \25CF';
+    font-size: 20px;
+    color: red;
+    margin: 0 8px 0 8px;
+}
+
+.f-right{
+    float: right;
+    margin-right: 8px;
+    font-weight: lighter;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+.f-right:hover{
+    border-bottom: 1px solid white;
+}
+
+.w-97{
+    width: 97%;
+}

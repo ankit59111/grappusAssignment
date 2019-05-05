@@ -45,3 +45,16 @@ nav .dropdown-menu .dropdown-menu-list{
 nav .dropdown-menu .dropdown-menu-list .list-item{
     line-height: 50px;
 }
+
+
+@media (max-width: 768px) {
+    nav{
+        display: block !important;
+    }
+    nav form{
+        display: none !important;
+    }
+    nav .dropdown{
+        display: none !important;
+    }
+}

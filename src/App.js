@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from "./header/Header";
+import FilterCard from "./filter card/FilterCard";
+import Popular_sector from "./popular sector/Popular_sector";
+import SideBarCard from "./sidebar/sidebar_card/SideBarCard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <React.Fragment>
+        <div className="App flex ">
+          <Header/>
+        </div>
+        <div className={"flex flex-row"}>
+          <div className="w-75">
+            <FilterCard/>
+            <Popular_sector/>
+          </div>
+          <div className={"w-25"}>
+            <SideBarCard placeholder="Search company" heading={"Find Strategic gaps"}/>
+            <SideBarCard heading={"Explore Market maps"} placeholder="Search selector"/>
+            <SideBarCard placeholder="Search sector" heading={"Identify Potential acquires"}/>
+            <SideBarCard placeholder="Search company" heading={"Identify Growth Company"}/>
+          </div>
+        </div>
+      </React.Fragment>
   );
 }
 

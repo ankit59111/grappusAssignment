@@ -1,0 +1,47 @@
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid #787878;
+    border-radius: 1.25rem;
+    flex:1 1 auto;
+    margin: 20px 0 0 20px;
+    color: white;
+}
+.filter_main_card{
+    border-radius: 0.25rem;
+}
+
+.w-75{
+    width: 75%;
+}
+
+.pl-5{
+    padding-left: 5%;
+}
+
+.card ul{
+    max-width: 80%;
+    overflow: hidden;
+    overflow-x: scroll;
+    margin-left: 0px;
+    padding-left: 0px;
+    justify-content: space-between;
+    border-bottom: 1px solid #787878;
+}
+
+.card ul li{
+    padding-left: 0px;
+    cursor: pointer;
+    color: rgb(80,80,80);
+
+}
+.card ul li.active{
+    border-bottom: 2px solid red;
+    color: white;
+}
+.card ul::-webkit-scrollbar{
+    display: none;
+}
+

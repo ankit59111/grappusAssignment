@@ -1,6 +1,6 @@
 import React from "react"
 import "./Header.css";
-import user from "../user.png"
+import user from "../images/user.png"
 import SearchBar from "../searchBar/SearchBar";
 export default class Header extends React.Component{
     constructor(props){
@@ -28,19 +28,20 @@ export default class Header extends React.Component{
                     <img src={user} alt={"user"}/>
                     <span>Mrinalani Saha</span>
                 </div>
-                <div className ={`dropdown-menu ${state.showDropDown?"":"hide"}`}>
-                    <ul className="dropdown-menu-list">
-                        <li className="list-item">
-                            Change Profile
-                        </li>
-                        <li className="list-item">
-                            Settings
-                        </li>
-                        <li className="list-item">
-                            Help
-                        </li>
-                    </ul>
-                </div>
+
+                    <div className={`dropdown-menu ${state.showDropDown ? "" : "hide"}`}>
+                        <ul className="dropdown-menu-list">
+                            <li className="list-item">
+                                Change Profile
+                            </li>
+                            <li className="list-item">
+                                Settings
+                            </li>
+                            <li className="list-item">
+                                Help
+                            </li>
+                        </ul>
+                    </div>
 
             </nav>
         )

@@ -1,0 +1,13 @@
+.card{
+    flex-direction: row;
+}
+
+.filter_card{
+    font-size: 12px;
+    color: rgb(168,168,168);
+    cursor: pointer;
+}
+
+.filter_card .card-badge{
+    font-size: 12px;
+}
