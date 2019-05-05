@@ -2,7 +2,7 @@ import React from "react";
 import Badge from "../badges/Badge";
 import "./Popular_sector.css"
 
-export default class Popular_sector extends React.Component{
+export default class PopularSector extends React.Component{
     constructor(props){
         super(props)
 

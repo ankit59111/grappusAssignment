@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Header from "./header/Header";
 import FilterCard from "./filter card/FilterCard";
-import Popular_sector from "./popular sector/Popular_sector";
+import PopularSector from "./popular sector/Popular_sector";
 import SideBarCard from "./sidebar/sidebar_card/SideBarCard";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <div className={"flex flex-row"} id={"id_mainContentDiv"}>
           <div className="w-75" id={"id_section"}>
             <FilterCard/>
-            <Popular_sector/>
+            <PopularSector/>
           </div>
           <div className={"w-25"} id={"id_aside"}>
             <SideBarCard placeholder="Search company" heading={"Find Strategic gaps"}/>

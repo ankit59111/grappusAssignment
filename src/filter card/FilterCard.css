@@ -49,12 +49,26 @@
     .filter_main_card{
         width: 90% !important;
     }
+
+    .filter_main_card .pl-5{
+        width: inherit;
+    }
+
+    .card ul {
+        max-width: inherit;
+    }
     .card ul li{
         padding-right: 15px;
 
     }
 
     #id_filter_card_list{
-        width: 85% !important;
+        width: 100% !important;
+        flex-direction: column !important;
+        justify-content: space-around;
     }
+    #id_filter_card_list div{
+        width: 100% !important;
+    }
+
 }
