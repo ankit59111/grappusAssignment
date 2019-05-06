@@ -11,3 +11,12 @@
 .filter_card .card-badge{
     font-size: 12px;
 }
+
+@media (max-width: 780px) {
+    .filter_card{
+        padding: 15px !important;
+    }
+    .filter_card p{
+        margin: 0 !important;
+    }
+}
