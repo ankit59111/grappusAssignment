@@ -19,7 +19,7 @@ export default class Badge extends React.Component {
     render() {
         const $color = {
             color:this.props.color,
-            "text-shadow":  `0 0 25px ${this.props.color}, 0 0 5px dark${this.props.color}`,
+            "textShadow":  `0 0 25px ${this.props.color}, 0 0 5px dark${this.props.color}`,
         };
         const $className = this.props.className || "";
         return(

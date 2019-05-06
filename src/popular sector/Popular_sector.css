@@ -30,4 +30,20 @@
     #id_section2_body{
         width: 90%;
     }
+
+    #id_section2_body .section2_filter_main_card{
+        width: 100%;
+        padding: 15px;
+    }
+    #id_section2_body .section2_filter_main_card .w-97{
+        width: 100% !important;
+    }
+
+    #id_section2_body .section2_filter_main_card h4{
+        font-size: 12px;
+    }
+    #id_section2_body .section2_filter_main_card .f-right{
+        font-size: 10px;
+        margin-top: 10px;
+    }
 }

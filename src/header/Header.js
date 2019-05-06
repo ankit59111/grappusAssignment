@@ -53,6 +53,10 @@ export default class Header extends React.Component{
                     <div id="id_dropdown_menu" className={`dropdown-menu ${state.showDropDown ? "" : "hide"}`}>
                         <div className={"sideNavHeader"}>
                             <span onClick={this.closeSidePanel.bind(this)}>close</span>
+                            <div className="dropdown">
+                                <img src={user} alt={"user"}/>
+                                <span>Mrinalani Saha</span>
+                            </div>
                         </div>
                         <ul className="dropdown-menu-list">
                             <li className="list-item">

@@ -28,12 +28,14 @@ function App() {
   );
 }
 function openNav() {
-    document.getElementById("id_dropdown_menu").style.left="0%";
+    document.getElementById("id_dropdown_menu").classList.remove("l-100")
+    document.getElementById("id_dropdown_menu").classList.add("l-0")
     document.getElementById("overlay").style.display="block";
 }
 
 function closeNav() {
-    document.getElementById("id_dropdown_menu").style.left="100%";
+    document.getElementById("id_dropdown_menu").classList.remove("l-0");
+    document.getElementById("id_dropdown_menu").classList.add("l-100");
     document.getElementById("overlay").style.display="none";
 }
 

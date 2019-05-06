@@ -51,7 +51,13 @@
     }
 
     .filter_main_card .pl-5{
-        width: inherit;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .filter_main_card .filter_main_card_content .card-badge{
+        margin: 0 0 10px 0 !important;
+        font-size: 13px;
     }
 
     .card ul {
@@ -69,6 +75,11 @@
     }
     #id_filter_card_list div{
         width: 100% !important;
+        margin: 10px 0 0 10px;
+    }
+
+    .filter_card {
+        margin: 10px 0 10px 0 !important;
     }
 
 }

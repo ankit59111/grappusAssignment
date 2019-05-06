@@ -29,14 +29,29 @@ export default class FilterCard extends React.Component{
         }
     }
 
+
+    componentDidMount() {
+    }
+
+    handleHorizontalSection(e){
+
+        let childNode = document.getElementById("id_horizontalNvigation").childNodes;
+        for(let index =0 ;index < childNode.length ; index++){
+            childNode[index].classList.remove("active")
+        }
+        e.target.classList.add("active");
+
+
+    }
+
     render() {
         return(
             <div className="card filter_main_card">
-                <div className="pl-5">
+                <div className="pl-5 filter_main_card_content">
                     <h2>Choose from our Smart Filters</h2>
                     <p>Lorem Ipsum fds sdfs asfsa asdfa</p>
 
-                    <ul className="flex flex-row li-style-no">
+                    <ul className="flex flex-row li-style-no" onClick={this.handleHorizontalSection.bind(this)} id={"id_horizontalNvigation"}>
                         <li className="p-12 active ">Company</li>
                         <li className="p-12 ">Investor</li>
                         <li className="p-12 ">Person</li>
@@ -44,13 +59,13 @@ export default class FilterCard extends React.Component{
                         <li className="p-12 ">Industry</li>
                         <li className="p-12 ">Region</li>
                     </ul>
-                    {this.state.badges.map((item)=>{
-                        return <Badge value={item.text} color={item.color}/>
+                    {this.state.badges.map((item,index)=>{
+                        return <Badge key={"badge_"+index} value={item.text} color={item.color}/>
                     })}
 
                     <div className={"flex flex-row flex-wrap mb-16"} id={"id_filter_card_list"}>
-                    {this.state.cards.map((item)=>{
-                        return <Card className={"mr-25 bg-black"} badge-color={item.badgeColor} badge-value={item.badgeValue} text = {item.text}/>
+                    {this.state.cards.map((item,index)=>{
+                        return <Card key={"card_"+index} className={"mr-25 bg-black"} badge-color={item.badgeColor} badge-value={item.badgeValue} text = {item.text}/>
                     })}
                     </div>
 
