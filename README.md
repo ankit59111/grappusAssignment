@@ -1,4 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Run npm install first to install all the react dependencies
+
+2. Then run npm start to start the development server
+
+
+For further detail you can go through below documents.
 
 ## Available Scripts
 
